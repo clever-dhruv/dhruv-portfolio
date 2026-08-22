@@ -1,3 +1,4 @@
+import AIAgent from "./AIAgent";
 function App() {
   return (
     <div>
@@ -9,25 +10,37 @@ function App() {
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#agent">AI Agent</a>
             <a href="#experience">Experience</a>
           </div>
         </nav>
       </header>
 
       <main>
+        {/* HERO */}
+        <section id="agent">
+  <h2>Personal AI Agent</h2>
+
+  <p>
+    Ask my AI agent about my projects, skills, experience,
+    and technical interests.
+  </p>
+
+  <AIAgent />
+</section>
         <section className="hero">
-          <p>Computer Science Student • AI & ML</p>
+          <p>AI/ML Developer • Computer Science Student</p>
 
           <h1>
-            Building software and AI projects
+            I build practical AI systems
             <br />
             that solve real problems.
           </h1>
 
           <p>
-            I'm Dhruv, a Computer Science student interested in
-            software development, artificial intelligence, and
-            machine learning.
+            I'm Dhruv, a Computer Science student focused on
+            artificial intelligence, machine learning, and
+            full-stack development.
           </p>
 
           <div className="buttons">
@@ -37,72 +50,122 @@ function App() {
           </div>
         </section>
 
+        {/* ABOUT */}
         <section id="about">
           <h2>About Me</h2>
+
           <p>
-            I am a Computer Science student specializing in AI & ML.
-            I enjoy building full-stack applications, working with
-            data, and learning how AI systems can solve practical
-            problems.
+            I enjoy turning ideas into working software. My focus is
+            on building practical AI-powered applications while
+            strengthening my foundations in software development,
+            machine learning, and problem solving.
+          </p>
+
+          <p>
+            Currently, I'm exploring LLMs, AI agents, APIs, and
+            modern full-stack development through projects and
+            hands-on learning.
           </p>
         </section>
 
+        {/* AI STACK */}
         <section id="skills">
-          <h2>Skills</h2>
+          <h2>AI & Technical Stack</h2>
 
           <div className="skills">
-            <span>C++</span>
             <span>Python</span>
+            <span>C++</span>
             <span>JavaScript</span>
             <span>React</span>
             <span>Node.js</span>
             <span>Express.js</span>
             <span>PostgreSQL</span>
             <span>Machine Learning</span>
+            <span>LLMs</span>
+            <span>AI Agents</span>
+            <span>Git & GitHub</span>
             <span>DSA</span>
           </div>
         </section>
 
+        {/* PROJECTS */}
         <section id="projects">
           <h2>Projects</h2>
 
           <div className="projects">
             <article>
               <h3>Personal AI Study Coach</h3>
+
               <p>
                 An AI study assistant that uses personal study
                 material to explain concepts, generate practice
                 questions, evaluate answers, and identify weak areas.
               </p>
-              <p>AI • Study Assistant • Claude Project</p>
+
+              <p>AI • Study Assistant • LLM</p>
             </article>
 
             <article>
               <h3>Job Portal</h3>
+
               <p>
                 A full-stack job portal with authentication,
                 recruiter functionality, job management, and
                 applications.
               </p>
-              <p>React • Node.js • Express • PostgreSQL • Prisma</p>
+
+              <p>
+                React • Node.js • Express • PostgreSQL • Prisma
+              </p>
             </article>
 
             <article>
               <h3>Talkify</h3>
+
               <p>
                 A full-stack chat application built to explore
                 real-time communication and modern web development.
               </p>
+
               <p>React • Node.js • Express</p>
             </article>
           </div>
         </section>
 
+        {/* PERSONAL AI AGENT */}
+        <section id="agent">
+          <h2>Personal AI Agent</h2>
+
+          <article>
+            <h3>Meet Dhruv AI</h3>
+
+            <p>
+              An AI agent built as part of my FlyRank capstone.
+              It understands my projects, skills, experience, and
+              technical interests so visitors can interact with
+              my portfolio conversationally.
+            </p>
+
+            <p>
+              The goal is simple: instead of only reading my
+              portfolio, you can ask questions and explore my work
+              through an AI interface.
+            </p>
+
+            <div className="buttons">
+              <a href="#agent">Try Dhruv AI</a>
+              <a href="YOUR_AGENT_GITHUB_URL">View Agent Code</a>
+            </div>
+          </article>
+        </section>
+
+        {/* EXPERIENCE */}
         <section id="experience">
           <h2>Experience</h2>
 
           <article>
             <h3>FlyRank — ML Internship</h3>
+
             <p>
               Working on practical machine learning and AI agent
               projects as part of the FlyRank internship program.
@@ -110,11 +173,18 @@ function App() {
           </article>
         </section>
 
-        <section>
-          <h2>Posts & Capstone</h2>
+        {/* CAPSTONE */}
+        <section id="capstone">
+          <h2>FlyRank Capstone</h2>
+
           <p>
-            A space for future technical posts, project updates,
-            and my final FlyRank capstone.
+            Building a personal AI-powered portfolio that combines
+            AI fluency, personal branding, and a working AI agent.
+          </p>
+
+          <p>
+            This project documents what I learn, what I build,
+            what breaks, and how I improve the system.
           </p>
         </section>
       </main>
